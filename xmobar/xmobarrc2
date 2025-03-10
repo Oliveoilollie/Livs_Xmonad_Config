@@ -1,0 +1,20 @@
+Config { font = "xft:Monospace-10"
+        , borderColor = "black"
+        , border = TopB
+        , bgColor = "#1D1616"
+        , fgColor = "#8E1616"
+        , position = TopH 19
+	, lowerOnStart = True
+	, overrideRedirect = True
+        , commands = [ Run Memory ["-t","Mem: <usedratio>%"] 14
+	                , Run Cpu [] 10
+ 			, Run Com "bash" ["-c", "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits"] "gpu" 10
+                        , Run Date "%m/%d/%Y %I:%M:%S %p" "date" 10 
+		        , Run XPropertyLog "_XMONAD_TRAYPAD"
+			, Run Volume "default" "Master" [] 10
+			, Run StdinReader
+                        ]
+        , sepChar = "$"
+        , alignSep = "}{"
+        , template = "$StdinReader$ }{ | $default:Master$| GPU: $gpu$% | $cpu$ | $memory$ | $date$ |$_XMONAD_TRAYPAD$"
+        }

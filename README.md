@@ -1,2 +1,2 @@
-# AcreetionOS_Xmonad
-the xmonad verison of acreetionOS. fast n light
+# a really simple xmonad config, using xmobar. 
+## it is not complete but it is useable. its gonna be used in the xmonad iso
