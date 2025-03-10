@@ -1,4 +1,4 @@
--- slutt livs xmonad config
+-- livs xmonad config, make sure you have the proper programs
 -- this config is was based on the haskell darks config http://code.haskell.org/xmonad/man/xmonad.hs.
 --
 --
