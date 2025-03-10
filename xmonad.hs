@@ -387,7 +387,7 @@ defaults = def {
         startupHook        = myStartupHook
     }
 
--- | Finally, a copy of the default bindings in simple textual tabular format.
+-- | Finally, a copy of the default bindings in simple textual tabular format. TODO: work on updating this with my keybindings!
 help :: String
 help = unlines ["The default modifier key is 'super', or what the supid winders people say THE WINDOWS KEY Default keybindings, i expect you to fucking read the config idiot:",
     "",
